@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* MAIN CONTENT */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* .box {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border: 10px solid #000;
+  font-size: 30px;
+  background-color: rgb(224, 175, 175);
+  transition: transform 0.6s ease;
+  transform-origin: top right;
+} */
+
+.box:hover {
+  /* transform: translate(50px, 50px); */
+  /* transform: scale(0.5); */
+  /* transform: scale(3, 0.5); */
+  /* transform: scaleX(3) scaleY(0.5); */
+  /* transform: perspective(2000px) rotateX(70deg); */
+  /* transform: skew(45deg); */
+}
+
+
+/* oyna ochilish effekti */
+
+
+.akfa-rom {
+  background-image: url('/masha_bear105.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 20px ridge #a52a2ae7;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.deraza-qanotlari {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 400px;
+  border: 20px ridge #a52a2ae7;
+  font-size: 16px;
+  font-weight: bold;
+  font-variant: small-caps;
+  color: #777;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: transform 1s ease;
+
+}
+.deraza1 {
+  transform-origin: left center;
+}
+.deraza2 {
+  transform-origin: right center;
+}
+
+.akfa-rom:hover .deraza1 {
+  transform: perspective(2000px) rotateY(-125deg);
+}
+.akfa-rom:hover .deraza2 {
+  transform: perspective(2000px) rotateY(125deg);
+}
